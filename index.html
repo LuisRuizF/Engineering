@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bidegain Engineering | Soluciones Avanzadas</title>
+    <meta name="description" content="Quantum Engineering ofrece soluciones avanzadas en ingeniería mecánica, consultoría estratégica y desarrollo de software técnico.">
+    <meta name="keywords" content="ingeniería, mecánica, consultoría, software, soluciones avanzadas">
+    <meta name="author" content="Quantum Engineering">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Script de Tailwind CSS (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configuración de Tailwind (Nueva paleta Dark/Amber) -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                primary: '#F59E0B', // Amber 500 (Naranja/Ámbar)
+                'primary-dark': '#D97706', // Amber 600
+                darkBg: '#111827', // Gray 900 (Casi negro)
+                mediumBg: '#1F2937', // Gray 800 (Gris oscuro)
+                lightBg: '#F9FAFB', // Gray 50
+                lightText: '#F3F4F6', // Gray 100 (Casi blanco)
+                mediumText: '#9CA3AF', // Gray 400 (Para texto sobre fondo oscuro)
+                darkText: '#1F2937', // Gray 800 (Para texto sobre fondo claro)
+              }
+            }
+          }
+        }
+      </script>
+    <style type="text/tailwindcss">
+        /* Estilos base */
+        html {
+            scroll-behavior: smooth; /* Navegación suave entre secciones */
+        }
+        body {
+            @apply font-sans antialiased bg-white text-darkText;
+        }
+        section {
+            @apply py-20 md:py-28; /* Espaciado generoso */
+        }
+        h2 {
+             @apply text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-16; /* Títulos grandes */
+        }
+        /* Ajustes de color de H2 según fondo */
+        .bg-darkBg h2, .bg-mediumBg h2 {
+            @apply text-lightText;
+        }
+        .bg-lightBg h2, .bg-white h2 {
+            @apply text-darkText;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Cabecera -->
+    <header class="bg-mediumBg shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+             <!-- Móvil: Columna. Desktop: Fila, elementos separados -->
+            <div class="flex flex-col md:flex-row md:justify-between md:items-center">
+                 <!-- Logo/Nombre Empresa -->
+                <div class="text-center md:text-left mb-4 md:mb-0">
+                    <a href="#inicio" class="text-2xl font-bold text-primary hover:text-primary-dark transition duration-300">Bidegain</a>
+                </div>
+                 <!-- Navegación -->
+                <nav>
+                    <!-- Móvil: Columna, items centrados. Desktop: Fila -->
+                    <ul class="flex flex-col items-center space-y-3 md:flex-row md:space-y-0 md:space-x-7 lg:space-x-10">
+                        <li><a href="#inicio" class="text-lightText hover:text-primary font-medium transition duration-200">Inicio</a></li>
+                        <li><a href="#servicios" class="text-lightText hover:text-primary font-medium transition duration-200">Servicios</a></li>
+                        <li><a href="#proyectos" class="text-lightText hover:text-primary font-medium transition duration-200">Proyectos</a></li>
+                        <li><a href="#nosotros" class="text-lightText hover:text-primary font-medium transition duration-200">Nosotros</a></li>
+                        <li><a href="#contacto" class="text-lightText hover:text-primary font-medium transition duration-200">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Sección Héroe - Diseño Dividido -->
+        <section id="inicio" class="bg-darkBg text-lightText pt-28 pb-32 md:pt-36 md:pb-40">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <!-- Columna de Texto -->
+                    <div>
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-5 leading-tight">
+                           Ingeniería <span class="text-primary">Avanzada</span><br> para Desafíos Complejos
+                        </h1>
+                        <p class="text-lg md:text-xl text-mediumText mb-10 max-w-lg">
+                           Transformamos ideas en soluciones de ingeniería robustas, eficientes y preparadas para el futuro.
+                        </p>
+                        <a href="#contacto" class="inline-block bg-primary text-darkText font-bold py-3 px-10 rounded-md hover:bg-primary-dark transition duration-300 text-lg shadow-md">
+                            Solicita una Consulta
+                        </a>
+                    </div>
+                    <!-- Columna de Placeholder Gráfico/Imagen -->
+                    <div class="bg-mediumBg h-64 md:h-80 lg:h-96 rounded-lg flex items-center justify-center">
+                        <span class="text-mediumText text-xl font-semibold">[Visual Representativo de Ingeniería]</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Servicios -->
+        <section id="servicios" class="bg-lightBg">
+            <div class="container mx-auto px-6">
+                <h2>Nuestros Servicios Clave</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <!-- Servicio 1 -->
+                    <div class="bg-white p-8 rounded-lg shadow-md text-left hover:shadow-xl transition-shadow duration-300 border-t-4 border-primary">
+                        <div class="text-primary mb-4">
+                             <!-- Icono Placeholder -->
+                             <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M12 6V3m0 18v-3m0-12a9 9 0 110 18 9 9 0 010-18z" /></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3 text-darkText">Ingeniería Mecánica</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">Diseño de componentes, análisis de estrés y optimización de sistemas mecánicos.</p>
+                    </div>
+                    <!-- Servicio 2 -->
+                     <div class="bg-white p-8 rounded-lg shadow-md text-left hover:shadow-xl transition-shadow duration-300 border-t-4 border-primary">
+                        <div class="text-primary mb-4">
+                             <!-- Icono Placeholder -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.539 1.118l-3.975-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.539-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" /></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3 text-darkText">Consultoría Estratégica</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">Análisis de viabilidad, planificación de proyectos y optimización de procesos.</p>
+                    </div>
+                    <!-- Servicio 3 -->
+                    <div class="bg-white p-8 rounded-lg shadow-md text-left hover:shadow-xl transition-shadow duration-300 border-t-4 border-primary">
+                        <div class="text-primary mb-4">
+                             <!-- Icono Placeholder -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3 text-darkText">Desarrollo de Software Técnico</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">Creación de herramientas y software a medida para aplicaciones de ingeniería.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Proyectos -->
+        <section id="proyectos" class="bg-mediumBg text-lightText">
+            <div class="container mx-auto px-6">
+                <h2>Casos de Éxito</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Proyecto 1 -->
+                    <div class="bg-darkBg rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                         <div class="bg-gray-700 h-52 flex items-center justify-center text-mediumText font-semibold">
+                             [Imagen Proyecto Ferroviario]
+                         </div>
+                        <div class="p-6">
+                            <h3 class="text-lg font-semibold mb-2 text-lightText">Modernización Red Ferroviaria</h3>
+                             <p class="text-mediumText text-sm">Ingeniería de sistemas y señalización avanzada.</p>
+                        </div>
+                    </div>
+                     <!-- Proyecto 2 -->
+                     <div class="bg-darkBg rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                         <div class="bg-gray-700 h-52 flex items-center justify-center text-mediumText font-semibold">
+                             [Imagen Turbina Eólica]
+                         </div>
+                        <div class="p-6">
+                            <h3 class="text-lg font-semibold mb-2 text-lightText">Análisis Fatiga Turbina Eólica</h3>
+                            <p class="text-mediumText text-sm">Simulación y predicción de vida útil de componentes.</p>
+                        </div>
+                    </div>
+                     <!-- Proyecto 3 -->
+                    <div class="bg-darkBg rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                         <div class="bg-gray-700 h-52 flex items-center justify-center text-mediumText font-semibold">
+                              [Imagen Prototipo Robótico]
+                         </div>
+                        <div class="p-6">
+                            <h3 class="text-lg font-semibold mb-2 text-lightText">Prototipo Brazo Robótico</h3>
+                             <p class="text-mediumText text-sm">Diseño mecatrónico y sistema de control.</p>
+                        </div>
+                    </div>
+                </div>
+                 <div class="text-center mt-16">
+                    <a href="#contacto" class="text-primary hover:text-primary-dark font-semibold transition duration-300">Ver más proyectos →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Nosotros - Diseño Dividido -->
+        <section id="nosotros" class="bg-white">
+            <div class="container mx-auto px-6">
+                 <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                     <!-- Columna de Texto -->
+                    <div class="md:order-2">
+                        <h2 class="text-left !text-3xl md:!text-4xl mb-8">Nuestra Filosofía: Innovación y Rigor</h2>
+                        <div class="text-gray-600 text-lg leading-relaxed space-y-6">
+                            <p>
+                                En Bidegain Engineering, combinamos la creatividad con un enfoque analítico riguroso. Fundada por expertos con décadas de experiencia combinada, nos dedicamos a superar los límites de la ingeniería tradicional.
+                            </p>
+                            <p>
+                                Valoramos la colaboración estrecha con nuestros clientes, entendiendo sus necesidades únicas para entregar soluciones personalizadas que generan un impacto real y medible.
+                            </p>
+                        </div>
+                    </div>
+                     <!-- Columna Placeholder Imagen/Gráfico -->
+                    <div class="md:order-1 bg-lightBg h-72 md:h-96 rounded-lg flex items-center justify-center">
+                         <span class="text-gray-500 text-xl font-semibold">[Gráfico de Valores / Equipo]</span>
+                    </div>
+                 </div>
+            </div>
+        </section>
+
+        <!-- Sección Contacto -->
+        <section id="contacto" class="bg-primary text-darkText">
+             <div class="container mx-auto px-6 text-center">
+                <h2 class="!text-darkText !text-4xl md:!text-5xl">¿Listo para Innovar?</h2>
+                <p class="text-xl text-gray-800 font-medium mb-12 max-w-3xl mx-auto">
+                    Ponte en contacto con nuestro equipo de expertos. Estamos aquí para discutir tus necesidades y explorar cómo podemos colaborar.
+                </p>
+                <div class="space-y-6 text-xl">
+                   <p>
+                        <strong class="font-semibold">Dirección:</strong> Centro, San Pedro Garza García, Nuevo León.
+                   </p>
+                    <p>
+                        <strong class="font-semibold">Teléfono:</strong> <a href="tel:8114807878" class="text-mediumBg hover:text-darkBg font-bold hover:underline">8114807878</a>
+                    </p>
+                    <p>
+                         <strong class="font-semibold">Email:</strong> <a href="mailto:start@quantumeng.com" class="text-mediumBg hover:text-darkBg font-bold hover:underline">contacto@gmail.com</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-darkBg text-mediumText py-8 text-center">
+        <div class="container mx-auto px-6">
+            <p class="text-sm">© 2025 Bidegain Engineering. Vanguardia en Soluciones de Ingeniería.</p>
+        </div>
+    </footer>
+</body>
+</html>
